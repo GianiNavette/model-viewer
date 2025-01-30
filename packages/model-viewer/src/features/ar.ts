@@ -378,7 +378,7 @@ configuration or device capabilities');
 
       const objectURL = generateUsdz ? await this.prepareUSDZ() : this.iosSrc!;
       const modelUrl = new URL(objectURL, self.location.toString());
-
+    alert(modelUrl);
       if (generateUsdz) {
         const location = self.location.toString();
         const locationUrl = new URL(location);
